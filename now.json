@@ -1,0 +1,19 @@
+{
+  "name": "frugalhood",
+  "alias": ["frugalhood.now.sh"],
+  "regions": ["sfo1", "oma1"],
+  "version": 2,
+  "scope": "fkholmat",
+  "public": true,
+  "github": {
+    "enabled": true,
+    "autoAlias": true,
+    "silent": false,
+    "autoJobCancelation": false
+  },
+  "build": {
+    "env": {
+      "SITE_NAME": "Frugalhood"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "frugalhood",
+  "version": "0.1.0",
+  "description": "JAMstack blog site using NextJS, Contentful, Bulma, and deployed with Zeit Now.",
+  "main": "index.js",
+  "author": "Furkat Kholmatov",
+  "keywords": [
+    "JAMstack",
+    "NextJS",
+    "Contentful",
+    "Bulma",
+    "Zeit Now"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build",
+    "export": "next build && next export",
+    "serve": "serve out -p 3000"
+  },
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "bulma": "^0.8.0",
+    "contentful": "^7.10.0",
+    "dotenv": "^8.2.0",
+    "next": "^9.1.4",
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
