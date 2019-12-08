@@ -1,3 +1,5 @@
 # Frugalhood
 
-JAMstack blog site using NextJS, Contentful, Bulma, and deployed with Zeit Now.
+JAMstack site using NextJS, Contentful, Bulma, and deployed with Netlify.
+
+[Visit](https://frugalhood.netlify.com/)

@@ -1,8 +1,12 @@
 {
   "name": "frugalhood",
   "version": "0.1.0",
-  "description": "JAMstack blog site using NextJS, Contentful, Bulma, and deployed with Zeit Now.",
+  "description": "JAMstack site using NextJS, Contentful, Bulma, and deployed with Netlify.",
   "main": "index.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/fkholmat/frugalhood.git"
+  },
   "author": "Furkat Kholmatov",
   "keywords": [
     "JAMstack",
