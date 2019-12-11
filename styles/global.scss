@@ -1,5 +1,8 @@
 @import '../node_modules/bulma/sass/utilities/initial-variables';
 
+$primary: #180241;
+$link: #41020B;
+
 @import '../node_modules/bulma/bulma.sass';
 
 // prevents active navbar-menu on mobile from pushing content down
@@ -16,5 +19,14 @@
   .navbar-item.is-hoverable:focus-within .navbar-dropdown {
       display: none;
   }
+}
+
+.navbar-item img {
+  max-height: 3rem;
+}
+
+.navbar-burger {
+  height: 4.0rem;
+  width: 4.0rem;
 }
   

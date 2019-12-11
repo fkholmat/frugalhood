@@ -15,7 +15,7 @@ class NavBar extends React.Component {
           <div className="navbar-brand">
             <Link href="/">
               <a className="navbar-item">
-                Frugalhood
+                <img src="../images/frugalhood-logo.png" alt="Frugalhood Logo"/>
               </a>
             </Link>
             <a id="burger" onClick={this.toggleNavBurger}

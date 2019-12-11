@@ -4,7 +4,7 @@ class HomePage extends React.Component {
   render() {
     return (
       < >
-        <div className="hero is-medium is-primary">
+        <div className="hero is-medium is-primary is-bold">
           <div className="hero-body">
             <div className="container">
               <h1 className="title is-size-3">Welcome</h1>

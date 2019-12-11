@@ -4,7 +4,7 @@ const MenuPage = () => {
   const router = useRouter(); // router.query will be populated during export
 
   return (
-      <div className="hero is-medium is-primary">
+      <div className="hero is-medium is-primary is-bold">
         <div className="hero-body">
           <div className="container">
             <h1 className="title is-size-3">{router.query.name}</h1>
