@@ -1,9 +1,10 @@
 require('dotenv').config()
 
+const withOffline = require('next-offline')
 const withSass = require('@zeit/next-sass')
 const { getMenuItems } = require('./helpers/getMenuItems')
 
-module.exports = withSass({
+const nextConfig = {
   env: {
     // Reference variables that were defined in the .env file and 
     // make it available at Build Time
@@ -33,4 +34,6 @@ module.exports = withSass({
 
     return pathMap
   },
-})
+}
+
+module.exports = withOffline(withSass(nextConfig))
