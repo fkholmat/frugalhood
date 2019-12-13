@@ -1,7 +1,10 @@
 @import '../node_modules/bulma/sass/utilities/initial-variables';
 
-$primary: #180241;
-$link: #41020B;
+// https://colorhunt.co/palette/165126
+$primary: #111D5E;
+$link: #B21F66;
+$navbar-item-hover-color: $primary;
+$navbar-dropdown-arrow: $primary;
 
 @import '../node_modules/bulma/bulma.sass';
 

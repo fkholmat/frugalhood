@@ -80,7 +80,7 @@ const NavMenu = () => {
           <ListMenuItem key={i.fields.slug} menuItem={i} />
         ) : null}
         <div className="navbar-item">
-          <button className="button is-primary is-uppercase">Newsletter</button>
+          <button className="button is-link is-uppercase">Newsletter</button>
         </div>
       </div>
     </div>

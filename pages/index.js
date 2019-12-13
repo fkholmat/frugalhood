@@ -9,7 +9,7 @@ class HomePage extends React.Component {
             <div className="container">
               <h1 className="title is-size-3">Welcome</h1>
               <h2 className="subtitle is-size-5">I am Next.js, Bulma and Contentful starter</h2>
-              <button className="button is-uppercase">Learn More</button>
+              <button className="button is-uppercase is-link">Learn More</button>
             </div>
           </div>
         </div>
