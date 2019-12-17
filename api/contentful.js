@@ -3,15 +3,19 @@ const client = require('contentful').createClient({
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
 })
 
-exports.getMenuItems = async () => {
-  const list = await client.getEntries({
-    content_type: 'menuItem'
+const contentTypeID = "menuItem"
+
+async function getAllMenuItems() {
+  const allMenuItems = await client.getEntries({
+    content_type: contentTypeID
   })
 
-  return list.items.map(item => ({
+  return allMenuItems.items.map(item => ({
     id: item.sys.id,
     name: item.fields.name,
     link: item.fields.slug,
     hasChild: item.fields.hasChildMenuItem
   }))
 }
+
+module.exports = {getAllMenuItems}

@@ -2,7 +2,7 @@ require('dotenv').config()
 
 const withOffline = require('next-offline')
 const withSass = require('@zeit/next-sass')
-const { getMenuItems } = require('./helpers/getMenuItems')
+const { getAllMenuItems } = require('./api/contentful')
 
 const nextConfig = {
   env: {
@@ -20,7 +20,7 @@ const nextConfig = {
     }
 
     // Data generated pages
-    const menuItems = await getMenuItems()
+    const menuItems = await getAllMenuItems()
     menuItems.map(menuItem => {
       pathMap[`/${menuItem.link}`] = {
         page: "/[menuSlug]",
